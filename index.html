@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prathamesh Bhsoale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<nav class="taskbar">
+        <H1><a href="Index.html">Prathamesh Bhosale</a></H1>
+        <div>
+            <ul class="nav-links">
+                <li class="hideOnMobile"><a href="#home">Home</a></li>
+                <li class="hideOnMobile"><a href="#Blog">Blog</a></li>
+                <li class="hideOnMobile"><a href="#about-me">Portfolio</a></li>
+                <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+                <li class="hideOnMobile"><a href="#footer">Collaborate</a></li>
+                <li  class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick="hidesidebar()"><a href="#home">Home</a></li>
+                <li onclick="hidesidebar()"><a href="#Blog">Blog</a></li>
+                <li onclick="hidesidebar()"><a href="#about-me">Portfolio</a></li>
+                <li onclick="hidesidebar()"><a href="#projects">Projects</a></li>
+                <li onclick="hidesidebar()"><a href="#footer">Collaborate</a></li>
+                <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            </ul>
+        </div>
+</nav>
+<div class="content-block" id="home">
+        <div class="text-content">
+            <h2>Discover  My  Work</h2>
+            <p>Welcome to my digital realm.<br><br>
+              I am seeker of knowledge.<br> 
+              As a student of engineering,<br> I am driven by an insatiable curiosity to explore the <br>infinite possibilities of technology and innovation.<br>
+              With every challenge,<br> I see an opportunity to learn, grow, and contribute to a future shaped by creativity and purpose.<br> 
+              Step into my world,<br> where ambition meets passion, and every endeavor is a <br>step towards a brighter horizon.<br></p>
+        </div>
+        <div class="image-content">
+            <img src="Images/James-Webb-Wallpapers-4K.webp" alt="James_Webb Telescope" class="image-adjust">
+        </div>
+</div>
+<section class="blog-section" id="Blog">
+    <h2 class="blog-heading">BLOG</h2>
+    <div class="blog-container">
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+            <img src="Images/aesthetics.jpg" alt="Blog Image">
+            <p class="author-name">Prathamesh Bhosale</p>
+            <h3 class="blog-title">The Story of Nalanda</h3>
+            <p class="blog-description">Discover the nalanda as never before!</p>
+            <div class="end-border"></div>
+        </div>
+        <div class="blog-post">
+          <img src="Images/aesthetics.jpg" alt="Blog Image">
+          <p class="author-name">Prathamesh Bhosale</p>
+          <h3 class="blog-title">The Story of Nalanda</h3>
+          <p class="blog-description">Discover the nalanda as never before!</p>
+          <div class="end-border"></div>
+        </div>
+        <div class="blog-post">
+        <img src="Images/aesthetics.jpg" alt="Blog Image">
+        <p class="author-name">Prathamesh Bhosale</p>
+        <h3 class="blog-title">The Story of Nalanda</h3>
+        <p class="blog-description">Discover the nalanda as never before!</p>
+        <div class="end-border"></div>
+        </div>
+       <div class="blog-post">
+      <img src="Images/aesthetics.jpg" alt="Blog Image">
+      <p class="author-name">Prathamesh Bhosale</p>
+      <h3 class="blog-title">The Story of Nalanda</h3>
+      <p class="blog-description">Discover the nalanda as never before!</p>
+      <div class="end-border"></div>
+      </div>
+      <div class="previous-blog">
+        <a href="previous-blog.html" class="previous-link">Previous Blogs</a>
+      </div>
+  </div>
+</section>
+<section id="about-me" class="about-me-section">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate engineering student and tech enthusiast with a keen interest in Quantum Computing, Aeronautics, and futuristic technologies.
+    </p>
+   <ul>
+      <li>Pursuing Bachelor of Engineering at Zeal College of Engineering and Research.</li>
+      <li>Skilled in C++, Python, and Aspiring Andriod Developer.</li>
+      <li>Experience with Arduino projects and microcontrollers.</li>
+      <li>Aviation enthusiast with knowledge in Aeronautics.</li>
+    </ul>
+    
+    <a href="#" class="about-button">Visit My Portfolio</a>
+  </section>
+<div id="about-image">
+    <img src="Images/Aesthetic flow.png" alt="Aesthetic Flow">
+</div>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <a href="project-link-1.html">
+          <div class="project-image">
+            <img src="Images/Func generator.jpg" alt="Project 1">
+            <div class="overlay">
+              <span>Function Generator</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="project">
+        <a href="project-link-2.html">
+          <div class="project-image">
+            <img src="Images/Full adder.jpg" alt="Project 2">
+            <div class="overlay">
+              <span>Full Adder</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="project">
+        <a href="project-link-2.html">
+          <div class="project-image">
+            <img src="Images/Python code converter.png" alt="Project 2">
+            <div class="overlay">
+              <span>Python code converter</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+</section>
+<footer id="footer">
+    <!-- Up Section -->
+    <div class="footer-up">
+      <h3>Prathamesh Bhosale</h3>
+    </div>
+  
+    <!-- Down Section -->
+    <div class="footer-down">
+      <!-- Left Section: Email -->
+      <div class="footer-left">
+        <p>prathameshbhosale108@gmail.com</p>
+      </div>
+  
+      <!-- Middle Section: Home Address -->
+      <div class="footer-middle">
+        <p>House no 339<br> Narayani House<br> Pune 411046<br></p>
+      </div>
+  
+      <!-- Right Section: Social Media Icons -->
+      <div class="footer-right">
+        <a href="http://www.youtube.com/@prathameshbhosale9968" target="_blank" class="Red">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://x.com/RevealP30112" target="_blank" class="Black">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/prathamesh-bhosale-03a942256?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BizIz%2FmjyRASxydIwuei1Mw%3D%3D" target="_blank" class="Dark-blue">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+          <a href="https://github.com/PrathameshBhosale108" target="_blank" class="Black">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><i class="fa-regular fa-copyright"></i> 2024 Prathamesh Bhosale. All Rights Reserved.<br> Made with <i class="fa-solid fa-heart" id="Color"></i> in INDIA</p>
+    </div>
+  </footer>
+  <script src="Koty.js"></script>
+</body>
+</html>

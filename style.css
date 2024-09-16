@@ -1,0 +1,511 @@
+@font-face {
+    font-family: Modak;
+    src: url(Fonts/ostrich-regular.ttf);
+}
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    --nav-height:90px;
+    padding-top: var(--nav-height);
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Modak;
+    background-color: #FFFEFA;
+    opacity: 0; /* Start with all elements hidden */
+    transform: translateY(10px); /* Move elements slightly down */
+    animation: fadeIn 1.5s ease-out forwards; /* Animation settings */
+    overflow: visible;
+}
+@keyframes fadeIn {
+    to {
+      opacity: 1; /* Final opacity */
+      transform: translateY(0); /* Return elements to their original position */
+    }
+  }
+.taskbar{
+  width: 100%;
+  height: var(--nav-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color:#FBF6E7;
+  color: #000000; 
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.2s ;
+  border: 1px solid #000000; /* Border color and thickness */
+  box-sizing: border-box; /* Include the border in the element's total width and height */
+  transition: top 0.3s;
+  transition: transform 0.2s ;
+}
+.taskbar h1 {
+    
+    font-size: 40px;
+    margin: 0;
+    padding: 0 0 0 50px; 
+}
+.taskbar h1 a{
+  text-decoration: none;
+  color: #000;
+}
+.nav--hidden{
+    transform: translateY(calc(-1 * var(--nav-height)));
+}
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 30px;
+}
+
+.nav-links li a {
+    transform: scaleX(1.9);
+    font-size: 22px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+}
+.nav-links:first-child{
+    margin-right:auto;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    transition: width 0.3s ease;
+}
+.nav-links li a:hover::after,
+.nav-links li a:focus::after {
+    width: 100%;
+}
+.nav-links li a.active::after {
+    width: 100%;
+}
+   .sidebar{
+    position:fixed;
+    top:0;
+    right:0;
+    height: 900px;
+    width: 250px;
+    z-index:999;
+    min-height: 100vh;
+    background-color: #FBF6E7;
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 50%; /* Position the sidebar at the center */
+    transform: translateX(-50%); /* Adjust it to be fully centered */
+}
+.sidebar li{
+    width:30%;
+    list-style: none;
+}
+.sidebar ul{
+    height: auto;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.sidebar a{
+    height:100%;
+    padding: 20px 30px;
+    text-decoration: none;
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    color: black;
+    text-shadow: 0 0 10px rgba(255, 166, 0, 0), /* Orange glow */
+    0 0 20px rgba(255, 166, 0, 0),
+    0 0 30px rgba(255, 166, 0, 0),
+    0 0 40px rgba(255, 166, 0, 0);
+}
+.menu-button{
+    display :none;
+}
+::selection{
+    background-color: rgb(255,132,0);
+    color: white;
+}
+.content-block{
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-top: 50px;
+   /* padding: 20px; */
+    /*margin: 20px 0;*/
+}
+.text-content{
+    padding: 10px;
+    width: 50%;
+    flex: 1;
+  /*  padding-right: 20px; */
+    
+}
+.text-content h2{
+    padding-top: 100px;
+    padding-left: 30px;
+    font-size: 90px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+.text-content p{
+  padding-top: 30px;
+  font-size: 24px;
+  padding-left: 30px;
+}
+.image-content{
+    width: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+}
+.image-content img{
+    width: 100%;
+    height: fit-content;
+    transform: rotate(90deg) scale(1.3) translate(203px,0px);
+    
+}
+.blog-section {
+    width: 100%;
+    margin-top: 323px;
+    background-color: #FBF6E7; /* Choose your preferred background color */
+    padding: 20px;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  
+  }
+  
+  .blog-heading {
+    padding-left: 50px;
+    font-size: 48px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .blog-container {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    width: 100%;
+   /* width: calc(700px * 3 + 85px); /* Width for 3 blog posts + gap */
+    height: 590px;
+    gap: 90px; /* Adds space between blog posts */
+  }
+  
+  .blog-post {
+    min-width: 420px; /* Width for each blog post */
+    border: 1px solid #000000;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 500px;
+  }
+  
+  .blog-post img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+  
+  .author-name {
+    color: #9b9b9b;
+    font-size: 19px;
+    margin: 10px;
+  }
+  
+  .blog-title {
+    padding-top: 15px;
+    font-size: 38px;
+    margin: 10px;
+  }
+  
+  .blog-description {
+    padding-top: 22px;
+    font-size: 26px;
+    margin: 10px;
+  }
+  .previous-blog{
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: #3c3c3c;
+  }
+  .previous-blog a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+  }
+  /*.end-border {
+    padding-left: 10px;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+  }*/
+  #about-me {
+    padding: 20px;
+    background-color: #E1E1E1; /* Light background for contrast */
+    margin-top: 0px; /* Space from the blog section */
+    text-align: center; /* Center-align all text */
+  }
+  
+  #about-me h2 {
+    font-size: 54px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #about-me p {
+    font-size: 26px;
+    color: #000000;
+    padding-top: 50px;
+    margin-bottom: 15px;
+  }
+  
+  #about-me ul {
+    list-style-type: disc;
+    padding-left: 0; /* Remove default indentation */
+    margin: 0 auto 20px auto; /* Center-align list */
+    display: inline-block; /* Make the list occupy minimal width */
+    text-align: left; /* Align bullets to the left within the centered list */
+  }
+  
+  #about-me ul li {
+    margin-bottom: 8px;
+    font-size: 25px;
+  }
+  
+  .about-button {
+  display: block; /* Change to block to ensure it sits below other content */
+  width: 170px;
+  height: auto;
+  margin: 0 auto; /* Center-align the button */
+  padding: 10px 20px;
+  background-color: #333; /* Button color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0px;
+  transition: background-color 0.3s ease;
+  margin-top: 70px; /* Space above the button */
+  }
+  
+  .about-button:hover {
+    background-color: #ff6600; /* Hover effect */
+  }
+
+#about-image{
+    border-top: 1px solid white;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#about-image img{
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    width: 1550px;
+}
+/* Projects Section Styling */
+#projects {
+    padding: 0px; /* Space around the section */
+    text-align: center; /* Center the title */
+    background-color: #f9f9f9; /* Background color */
+  }
+  
+  #projects h2 {
+    font-size: 64px;
+    color: #333;
+    margin: 0; /* Remove default margin */
+    padding: 50px 50px; /* Space above and below the title */
+    border-bottom: 1px solid black; /* Black border beneath the title */
+    text-align: center; /* Center the title text */
+  }
+  
+  /* Projects Container */
+  .projects-container {
+    display: flex; /* Stack project images horizontally */
+    justify-content: center; /* Center content */
+    align-items: center; /* Vertically center content if needed */
+    gap: 20px; /* Space between project images */
+    padding-top: 20px; /* Space above the project images */
+  }
+  
+  /* Project Image Styling */
+  .project {
+    position: relative; /* Positioning for overlay */
+    width: 550px; /* Adjust width of project images */
+    height: 500px; /* Adjust height of project images */
+    overflow: hidden; /* Hide overflow for image effect */
+    cursor: pointer; /* Cursor changes on hover */
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the container without distortion */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+  }
+  
+  .project-image:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  /* Overlay Styling */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    height: 100%;
+    width: 100%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .project-image:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .overlay span {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  /* Footer Styling */
+#footer {
+    background-color:#FBF6E7; /* Footer background color */
+    color: black; /* Footer text color */
+    padding: 0px;
+    text-align: left; /* Left-align text in up section */
+  }
+  
+  .footer-up {
+    background-image: url(Images/Blured\ green.png);
+    background-size: cover; /* Ensures the image covers the entire footer */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    padding-left: 80px;
+    padding-bottom: 70px; /* Space below the up section */
+    padding-top: 70px;
+  }
+  .footer-up h3:hover {
+    background-color: #cecece00;
+    text-shadow: 0 0 20px rgb(255, 166, 0), /* Brighter orange on hover */
+                 0 0 30px rgb(255, 166, 0),
+                 0 0 40px rgb(255, 166, 0),
+                 0 0 50px rgb(255, 166, 0);
+}
+  .footer-up h3 {
+    display: inline-block; /* Ensure the hover effect is only on the text */
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
+    font-size: 34px;
+    margin: 0; /* Remove default margin */
+  }
+  
+  .footer-down {
+    display: flex;
+    font-size: 20px;
+    border: 1px solid black;
+    display: flex; /* Arrange the down section in a horizontal row */
+    justify-content: space-between; /* Space between the sections */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center-align text in down sections */
+  }
+  
+  .footer-left, .footer-middle, .footer-right {
+    flex: 1; /* Equal width for all three sections */
+  }
+  
+  .footer-left{
+    padding: 30px;
+  }
+  .footer-middle{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+  .footer-right{
+    display: flex; /* Arrange icons horizontally */
+    justify-content: center; /* Center icons horizontally */
+    gap: 10px; /* Space between icons */
+  }
+  .footer-right a {
+    color: rgb(85, 85, 85); /* Icon color */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Space between icons */
+    font-size: 40px; /* Icon size */
+  }
+  
+  .footer-right .Red:hover {
+    color: #ff0000; /* Facebook blue */
+  }
+  
+  .footer-right .Black:hover {
+    color: #000000; /* Twitter blue */
+  }
+  
+  .footer-right .Dark-blue:hover {
+    color: #0077b5; /* LinkedIn blue */
+  }
+  .footer-bottom {
+    background-color: #FBF6E7; /* Slightly darker background color for the bottom section */
+    padding-top: 30px; /* Vertical padding for the bottom section */
+    padding-bottom: 30px;
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure it spans the entire width */
+    font-size: 14px; /* Font size for the bottom text */
+  }
+  #Color{
+    color: #ff0000;
+  }
+  .about-me-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .about-me-section.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
