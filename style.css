@@ -14,7 +14,7 @@ body{
     padding: 0;
     width: 100%;
     box-sizing: border-box;
-    font-family: Modak;
+    font-family: Agency FB;
     background-color: #FFFEFA;
     opacity: 0; /* Start with all elements hidden */
     transform: translateY(10px); /* Move elements slightly down */
