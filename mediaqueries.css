@@ -220,4 +220,12 @@
   .menu-button {
       display: block; /* Show button at 425px */
   }
+  .content-block{
+    flex-direction:column;
+    text-align:left;
+    align-items:left;
+  }
+  .text-content{
+    text-align:left;
+  }
 }
