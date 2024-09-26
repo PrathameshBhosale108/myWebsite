@@ -14,7 +14,7 @@ body{
     padding: 0;
     width: 100%;
     box-sizing: border-box;
-    font-family: Agency FB;
+    font-family: Modak;
     background-color: #FFFEFA;
     opacity: 0; /* Start with all elements hidden */
     transform: translateY(10px); /* Move elements slightly down */
@@ -229,7 +229,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 600px;
+    height: 100%;
   }
   
   .blog-post img {
