@@ -218,7 +218,7 @@ body{
     overflow-x: auto; /* Allows horizontal scrolling */
     width: 100%;
    /* width: calc(700px * 3 + 85px); /* Width for 3 blog posts + gap */
-    height: 40rem;
+    height: 38rem;
     gap: 90px; /* Adds space between blog posts */
   }
   
@@ -229,7 +229,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-height: 35rem;
+    max-height: 33rem;
   }
   
   .blog-post img {
