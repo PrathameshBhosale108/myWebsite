@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Modak;
+    src: url(Fonts/ostrich-regular.woff2) format('woff2');
+}
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.taskbar{
+    width: 100%;
+    height: var(--nav-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color:#FBF6E7;
+    color: #000000; 
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.2s ;
+    border: 1px solid #000000; /* Border color and thickness */
+    box-sizing: border-box; /* Include the border in the element's total width and height */
+    transition: top 0.3s;
+    transition: transform 0.2s ;
+  }
+  .taskbar h1 {
+      
+      font-size: 40px;
+      margin: 0;
+      padding: 0 0 0 50px; 
+  }
+  .taskbar h1 a{
+    text-decoration: none;
+    color: #000;
+  }
+  .nav--hidden{
+      transform: translateY(calc(-1 * var(--nav-height)));
+  }
+  .nav-links {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+  }
+  
+  .nav-links li {
+      margin-right: 30px;
+  }
+  
+  .nav-links li a {
+      transform: scaleX(1.9);
+      font-size: 22px;
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+      padding-bottom: 5px;
+  }
+  .nav-links:first-child{
+      margin-right:auto;
+  }
+  
+  .nav-links li a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0);
+      transition: width 0.3s ease;
+  }
+  .nav-links li a:hover::after,
+  .nav-links li a:focus::after {
+      width: 100%;
+  }
+  .nav-links li a.active::after {
+      width: 100%;
+  }
+     .sidebar{
+      position:fixed;
+      top:0;
+      right:0;
+      height: 900px;
+      width: 250px;
+      z-index:999;
+      min-height: 100vh;
+      background-color: #FBF6E7;
+      backdrop-filter: blur(6px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      left: 50%; /* Position the sidebar at the center */
+      transform: translateX(-50%); /* Adjust it to be fully centered */
+  }
+  .sidebar li{
+      width:30%;
+      list-style: none;
+  }
+  .sidebar ul{
+      height: auto;
+      width: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+  }
+  .sidebar a{
+      height:100%;
+      padding: 20px 30px;
+      text-decoration: none;
+      display: flex;
+      font-size: 30px;
+      text-align: center;
+      align-items: center;
+      color: black;
+      text-shadow: 0 0 10px rgba(255, 166, 0, 0), /* Orange glow */
+      0 0 20px rgba(255, 166, 0, 0),
+      0 0 30px rgba(255, 166, 0, 0),
+      0 0 40px rgba(255, 166, 0, 0);
+  }
