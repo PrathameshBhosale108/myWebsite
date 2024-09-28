@@ -57,7 +57,7 @@ body{
 .blog-container {
   /*  max-width: 100%;*/
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px;
     background-color: #ffffff;
 }
 
@@ -97,6 +97,94 @@ body{
     font-size: 1.5rem;
     color: #000000;
 }
+  /* Footer Styling */
+  #footer {
+    background-color:#FBF6E7; /* Footer background color */
+    color: black; /* Footer text color */
+    padding: 0px;
+    text-align: left; /* Left-align text in up section */
+  }
+  
+  .footer-up {
+    background-image: url(Images/Blured\ green.png);
+    background-size: cover; /* Ensures the image covers the entire footer */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    padding-left: 80px;
+    padding-bottom: 70px; /* Space below the up section */
+    padding-top: 70px;
+  }
+  .footer-up h3:hover {
+    background-color: #cecece00;
+    text-shadow: 0 0 20px rgb(255, 166, 0), /* Brighter orange on hover */
+                 0 0 30px rgb(255, 166, 0),
+                 0 0 40px rgb(255, 166, 0),
+                 0 0 50px rgb(255, 166, 0);
+}
+  .footer-up h3 {
+    display: inline-block; /* Ensure the hover effect is only on the text */
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
+    font-size: 34px;
+    margin: 0; /* Remove default margin */
+  }
+  
+  .footer-down {
+    display: flex;
+    font-size: 20px;
+    border: 1px solid black;
+    display: flex; /* Arrange the down section in a horizontal row */
+    justify-content: space-between; /* Space between the sections */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center-align text in down sections */
+  }
+  
+  .footer-left, .footer-middle, .footer-right {
+    flex: 1; /* Equal width for all three sections */
+  }
+  
+  .footer-left{
+    padding: 30px;
+  }
+  .footer-middle{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+  .footer-right{
+    display: flex; /* Arrange icons horizontally */
+    justify-content: center; /* Center icons horizontally */
+    gap: 10px; /* Space between icons */
+  }
+  .footer-right a {
+    color: rgb(138, 138, 138); /* Icon color */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Space between icons */
+    font-size: 40px; /* Icon size */
+  }
+  
+  .footer-right .Red:hover {
+    color: #ff0000; /* Facebook blue */
+  }
+  
+  .footer-right .Black:hover {
+    color: #000000; /* Twitter blue */
+  }
+  
+  .footer-right .Dark-blue:hover {
+    color: #0077b5; /* LinkedIn blue */
+  }
+  .footer-bottom {
+    background-color: #FBF6E7; /* Slightly darker background color for the bottom section */
+    padding-top: 30px; /* Vertical padding for the bottom section */
+    padding-bottom: 30px;
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure it spans the entire width */
+    font-size: 14px; /* Font size for the bottom text */
+  }
+  #Color{
+    color: #ff0000;
+  }
 @media(max-width:425px){
 .blog-heading{
     font-size: 2rem;
@@ -104,4 +192,55 @@ body{
 .nav__link{
     font-size: 2rem;
 }
+}
+@media(max-width:621px){
+    .footer-down {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+      }
+      .footer-up{
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+      .footer-left,
+      .footer-middle,
+      .footer-right {
+        width: 30%;
+      }
+      .footer-middle{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 90px;
+      }
+      .footer-left{
+        font-size: 1rem;
+        margin-top: 0px;
+        padding-top: 40px;
+      }
+        .footer-up,
+        .footer-left,
+        .footer-middle,
+        .footer-right,
+        .footer-bottom {
+          width: 100%;
+          text-align: center; /* Center align the content */
+          margin-bottom: 10px; /* Add spacing between sections */
+        }
+      
+        .footer-down {
+          display: block; /* Stack footer-left, footer-middle, footer-right */
+        }
+      
+        .footer-left,
+        .footer-middle,
+        .footer-right {
+          margin-bottom: 15px; /* Add space between each stacked section */
+        }
+      
+        /* Styling adjustments for social media icons */
+        .footer-right a {
+          margin: 0 5px; /* Space between social icons */
+          font-size: 24px; /* Adjust size for icons */
+        }
 }
