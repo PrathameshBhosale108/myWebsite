@@ -146,8 +146,8 @@ body{
     display :none;
 }
 ::selection{
-    background-color: rgb(255,132,0);
-    color: white;
+  background-color: rgba(255, 132, 0, 0.644);
+  color: rgb(0, 0, 0);
 }
 .content-block{
     width: 100%;
@@ -156,8 +156,6 @@ body{
     align-items: start;
     justify-content: space-between;
     padding-top: 50px;
-   /* padding: 20px; */
-    /*margin: 20px 0;*/
 }
 .text-content{
     padding: 10px;
