@@ -128,7 +128,7 @@
     .blog-post{
         flex: 0 0 100%; 
         min-width: 100px;
-        height: 500px; /* Square shape */
+        height: 45rem; /* Square shape */
         margin: 0 0 auto;
     }
    .blog-section{
@@ -215,12 +215,14 @@
   .blog-post{
     flex: 0 0 100%; 
     min-width: 50px;
-    height: 500px; /* Square shape */
+    height: 41.22rem; /* Square shape */
     margin: 0 0 auto;
 }
 }
 @media screen and (max-width: 425px) {
-
+  .blog-title{
+    font-size: 2rem;
+  }
   .menu-button {
       display: block; /* Show button at 425px */
   }
