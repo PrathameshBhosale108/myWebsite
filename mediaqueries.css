@@ -217,7 +217,7 @@
 }
 }
 @media screen and (max-width: 425px) {
-  
+
   .menu-button {
       display: block; /* Show button at 425px */
   }
