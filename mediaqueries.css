@@ -136,6 +136,9 @@
         width: 100%;
         overflow: hidden;
     }
+    .gallery-grid {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
    /* Default layout for larger screens */
 .footer-down {
   display: flex;
