@@ -269,12 +269,12 @@ body{
     font-size: 20px;
     color: white;
   }
-  /*.end-border {
+  .end-border {
     padding-left: 10px;
     width: 100%;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #ffbe4e;
     margin-top: 10px;
-  }*/
+  }
   #about-me {
     padding: 20px;
     background-color: #E1E1E1; /* Light background for contrast */
