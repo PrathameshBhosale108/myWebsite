@@ -15,18 +15,18 @@ body{
     padding-top: var(--nav-height);
     scroll-behavior: smooth;
     margin: 0;
-    padding: 20px;
+    padding: 0px;
     width: 100%;
     box-sizing: border-box;
     font-family:Ghee;
     line-height:1.6 ;
 }
 ::selection{
-    background-color: rgba(255, 132, 0, 0.644);
+    background-color: rgb(255, 132, 0);
     color: rgb(0, 0, 0);
 }
 body{
-    --nav-height: 80px;
+    --nav-height: 90px;
     padding-top: var(--nav-height);
     }
     .nav{
@@ -57,7 +57,7 @@ body{
 .blog-container {
   /*  max-width: 100%;*/
     margin: 0 auto;
-    padding: 0px;
+    padding: 10px;
     background-color: #ffffff;
 }
 
@@ -75,7 +75,7 @@ body{
 }
 
 .author-name {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 5px;
     border-bottom: 2px solid #333;
     display: inline-block;
