@@ -195,7 +195,34 @@ body{
     bottom: -1px;
     right: 550px;
 }
-
+@media (max-width:768px) {
+    .conclusion-box::after {
+        content: "”"; /* Right quote */
+        bottom: -1px;
+        right: 500px;
+    }
+}
+@media (max-width:622px){
+    .conclusion-box::after {
+        content: "”"; /* Right quote */
+        bottom: -1px;
+        right: 180px;
+    }
+}
+@media (max-width:376px){
+    .conclusion-box::after {
+        content: "”"; /* Right quote */
+        bottom: -1px;
+        right: 170px;
+    }
+}
+@media (max-width:321px){
+    .conclusion-box::after {
+        content: "”"; /* Right quote */
+        bottom: -1px;
+        right: 95px;
+    }
+}
 .conclusion-box p {
     margin: 0;
     text-align: justify; /* Align text for better readability */
