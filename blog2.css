@@ -163,22 +163,24 @@ body{
     padding:0 20px;
 }
 .conclusion-box {
-    background-color: #ffbc6596; /* Light blue background */
-    border: 2px solid #ff8400; /* Blue border */
+    background-color: #fff6e8; /* Light blue background */
+    border: 2px solid #ffa202; /* Blue border */
     border-radius: 8px; /* Rounded corners */
     padding: 20px; /* Space inside the box */
-    margin: 20px auto; /* Space around the box */
-    max-width: 800px; /* Center and limit width */
-    font-style: italic; /* Italic text */
+    margin: 20px auto; /* Center the box */
+    max-width: 90%; /* Adjust width to fit smaller screens */
+    box-sizing: border-box; /* Include padding in width calculation */
+    font-style: italic; /* Italicize the text */
     color: #333; /* Text color */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better aesthetics */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     position: relative; /* Enable pseudo-element positioning */
+    overflow: hidden; /* Prevent content overflow */
 }
 
 .conclusion-box::before, 
 .conclusion-box::after {
     font-size: 2em;
-    color: #ff8400;
+    color: #ffa202;
     position: absolute;
 }
 
@@ -191,14 +193,13 @@ body{
 .conclusion-box::after {
     content: "”"; /* Right quote */
     bottom: -1px;
-    right: 90px;
+    right: 550px;
 }
 
 .conclusion-box p {
     margin: 0;
     text-align: justify; /* Align text for better readability */
 }
-
   /* Footer Styling */
   #footer {
     font-family: Modak;
