@@ -162,6 +162,43 @@ body{
     text-align: justify;
     padding:0 20px;
 }
+.conclusion-box {
+    background-color: #ffbc6596; /* Light blue background */
+    border: 2px solid #ff8400; /* Blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Space inside the box */
+    margin: 20px auto; /* Space around the box */
+    max-width: 800px; /* Center and limit width */
+    font-style: italic; /* Italic text */
+    color: #333; /* Text color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better aesthetics */
+    position: relative; /* Enable pseudo-element positioning */
+}
+
+.conclusion-box::before, 
+.conclusion-box::after {
+    font-size: 2em;
+    color: #ff8400;
+    position: absolute;
+}
+
+.conclusion-box::before {
+    content: "“"; /* Left quote */
+    top: -5px;
+    left: -5px;
+}
+
+.conclusion-box::after {
+    content: "”"; /* Right quote */
+    bottom: -1px;
+    right: 90px;
+}
+
+.conclusion-box p {
+    margin: 0;
+    text-align: justify; /* Align text for better readability */
+}
+
   /* Footer Styling */
   #footer {
     font-family: Modak;
