@@ -91,6 +91,15 @@ body{
             /*transition: transform 0.3s ease-in-out;*/
             cursor: pointer;
 }
+.image-caption{
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 5px;
+}
+.image-capcon{
+    text-align: center;
+    margin:20px 0;
+}
 /*.blog-imagep:hover {
     transform: scale(1.05);
 }*/
