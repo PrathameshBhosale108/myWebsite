@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Warfare</title>
+    <link rel="stylesheet" href="blog2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html" class="nav__link">Prathamesh Bhosale</a>
+    </nav>
+
+    <div class="blog-container">
+        <!-- Blog Image -->
+        <div class="image-container">
+        <img src="Images/Gemini_Generated_Image_4xyban4xyban4xyb.jpeg" alt="Blog Image" class="blog-image">
+        </div>
+        <!-- Blog Metadata -->
+        <div class="blog-metadata">
+            <h3 class="author-name">Prathamesh Bhosale</h3>
+            <p class="publish-info">Published on: <span class="publish-date">31st December 2024</span> at <span class="publish-time">5:00 PM IST</span></p>
+        </div>
+
+        <!-- Blog Heading -->
+        <h1 class="blog-heading">Wings of the Future: Revolutionizing Aerial Warfare in the Modern Era</h1><br><br>
+
+        <!-- Blog Content -->
+        <div class="blog-content">
+        <p>The era of bulky, super-maneuverable fighter jets that soared faster than the speed of sound is fading. 
+            A new age of aerial warfare is on the horizon, redefining the concept of <b>Air superiority</b>.</p>
+            <a href="#img1">
+                <img src="Images/Gemini_Generated_Image_g6z7l7g6z7l7g6z7.jpeg" alt="Fighter Jet" class="blog-imagep">
+            </a>
+        
+    </div>
+    </div>
+    <footer id="footer">
+        <!-- Up Section -->
+        <div class="footer-up">
+          <h3>Prathamesh Bhosale</h3>
+        </div>
+      
+        <!-- Down Section -->
+        <div class="footer-down">
+          <!-- Left Section: Email -->
+          <div class="footer-left">
+            <p>prathameshbhosale108@gmail.com</p>
+          </div>
+      
+          <!-- Middle Section: Home Address -->
+          <div class="footer-middle">
+            <p>House no 339<br> Narayani House<br> Pune 411046<br></p>
+          </div>
+      
+          <!-- Right Section: Social Media Icons -->
+          <div class="footer-right">
+            <a href="http://www.youtube.com/@prathameshbhosale9968" target="_blank" class="Red">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://x.com/RevealP30112" target="_blank" class="Black">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/prathamesh-bhosale-03a942256?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BizIz%2FmjyRASxydIwuei1Mw%3D%3D" target="_blank" class="Dark-blue">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+              <a href="https://github.com/PrathameshBhosale108" target="_blank" class="Black">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p><i class="fa-regular fa-copyright"></i> 2024 Prathamesh Bhosale. All Rights Reserved.<br> Made with <i class="fa-solid fa-heart" id="Color"></i> in INDIA</p>
+        </div>
+      </footer>
+    <script>
+        //Enable hidden nav bar
+        {
+            const nav = document.querySelector(".nav");
+            let lastScrollY = window.scrollY;
+    
+            window.addEventListener("scroll",()=>{
+                   if(lastScrollY <= window.scrollY){
+                    nav.classList.add("nav--hidden");
+                   // console.log("We are going down!");
+                   }
+                   else{
+                    nav.classList.remove("nav--hidden");
+                   // console.log("We are going up!");
+                   }
+                   lastScrollY = window.scrollY;
+            });
+        }
+    </script>
+    
+</body>
+</html>
