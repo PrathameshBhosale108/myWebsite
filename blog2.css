@@ -76,7 +76,7 @@ body{
 
 .blog-image {
   width: 100%; /* Make the image responsive to the container */
-  max-width: 50%; /* Restrict the image's maximum width */
+  max-width: 100%; /* Restrict the image's maximum width */
   height: 35rem; /* Maintain aspect ratio */
   border: 1px solid black;
   border-radius: 0px;
