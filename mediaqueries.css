@@ -1,34 +1,16 @@
 /* ============================================================
-   BREAKPOINT: ≤ 1024px  — stack hero, switch to horizontal image
+   BREAKPOINT: ≤ 1024px
+   Keep side-by-side but let columns breathe a bit smaller
    ============================================================ */
 @media (max-width: 1024px){
-    .content-block {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
+    .text-content h2 {
+        font-size: 60px;
+        padding-top: 60px;
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
-    .text-content{
-        width: 100%;
-        padding: 0px;
-        margin-bottom: 0px;
-    }
-    /* HORIZONTAL image — fills full width, no rotation */
-    .image-content {
-        width: 100%;
-        height: 55vw;
-        max-height: 520px;
-        min-height: unset;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .image-content img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        transform: none !important;
+    .text-content p {
+        font-size: 20px;
     }
     .project-card {
         min-width: 440px;
@@ -38,23 +20,35 @@
 
 /* ============================================================
    BREAKPOINT: ≤ 768px
+   Stack hero. Image goes horizontal full-width.
    ============================================================ */
 @media only screen and (max-width: 768px) {
     .content-block {
         flex-direction: column;
-        text-align: center;
-        align-items: center;
     }
-    .text-content{
+    .text-content {
         width: 100%;
         padding: 0px;
+        text-align: center;
     }
+    .text-content h2 {
+        font-size: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .text-content p {
+        font-size: 22px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
+    /* HORIZONTAL image on mobile/tablet */
     .image-content {
         width: 100%;
-        height: 55vw;
-        max-height: 450px;
-        min-height: unset;
+        height: 60vw;
+        max-height: 480px;
         overflow: hidden;
+        display: block;
     }
     .image-content img {
         width: 100%;
@@ -63,17 +57,14 @@
         object-position: center;
         transform: none !important;
     }
-    .text-content p{
-        font-size: 26px;
-    }
-    .blog-container{
+    .blog-container {
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         gap: 20px;
         padding: 10px;
         padding-left: 20px;
     }
-    .blog-section{
+    .blog-section {
         margin-top: 0px;
     }
     .projects-container {
@@ -96,13 +87,13 @@
    BREAKPOINT: ≤ 621px
    ============================================================ */
 @media (max-width: 621px){
-    html, body{
+    html, body {
         overflow-x: hidden;
     }
-    .taskbar{
+    .taskbar {
         width: 100%;
     }
-    *{
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -111,25 +102,24 @@
         width: 100%;
     }
     .image-content {
-        width: 100%;
         height: 60vw;
         min-height: unset;
         overflow: hidden;
     }
-    .image-content img{
+    .image-content img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center;
         transform: none !important;
     }
-    .blog-post{
+    .blog-post {
         flex: 0 0 100%;
         min-width: 100px;
         height: 45rem;
         margin: 0 0 auto;
     }
-    .blog-section{
+    .blog-section {
         position: relative;
         width: 100%;
         overflow: hidden;
@@ -155,10 +145,11 @@
     .project-desc {
         font-size: 16px;
     }
+    /* Footer */
     .footer-down {
         display: block;
     }
-    .footer-up{
+    .footer-up {
         padding-right: 50px;
         padding-left: 50px;
     }
@@ -170,14 +161,14 @@
         text-align: center;
         margin-bottom: 10px;
     }
-    .footer-middle{
+    .footer-middle {
         border-top: 1px solid black;
         border-bottom: 1px solid black;
         border-left: none;
         border-right: none;
         padding: 40px;
     }
-    .footer-left{
+    .footer-left {
         margin-top: 0px;
         padding-top: 40px;
     }
@@ -208,14 +199,8 @@
 @media screen and (max-width: 425px) {
     .blog-title{ font-size: 2rem; }
     .menu-button { display: block; }
-    .content-block{
-        flex-direction: column;
-        text-align: left;
-        align-items: flex-start;
-    }
-    .text-content{ text-align: left; }
+    .text-content { text-align: left; }
     .image-content {
-        width: 100%;
         height: 70vw;
         min-height: unset;
         overflow: hidden;
@@ -241,7 +226,7 @@
    BREAKPOINT: ≤ 320px
    ============================================================ */
 @media (max-width: 320px){
-    .blog-post{
+    .blog-post {
         flex: 0 0 100%;
         min-width: 50px;
         height: 41.22rem;
