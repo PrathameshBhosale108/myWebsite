@@ -142,17 +142,21 @@ body{
 /* ========== HERO / CONTENT BLOCK ========== */
 .content-block{
     width: 100%;
-    min-height: calc(100vh - var(--nav-height));
-    z-index: -1;
+    /* let height be driven entirely by the image */
     display: flex;
-    align-items: stretch;
+    flex-direction: row;
+    align-items: stretch;   /* text column stretches to match image height */
     justify-content: space-between;
     overflow: hidden;
+    border-bottom: 2px solid #000;
 }
 .text-content{
     padding: 10px;
     width: 50%;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* vertically centre text within the stretched column */
 }
 .text-content h2{
     padding-top: 100px;
@@ -165,21 +169,19 @@ body{
     padding-top: 30px;
     font-size: 24px;
     padding-left: 30px;
+    padding-bottom: 80px;
 }
-/* DESKTOP: right half, image rotated vertical to fill height */
+/* DESKTOP: image sits naturally — its height defines the whole row */
 .image-content{
     width: 50%;
     flex: 1;
-    min-height: calc(100vh - var(--nav-height));
-    position: relative;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
 }
 .image-content img{
     width: 100%;
-    height: auto;
+    height: auto;          /* natural height — drives the hero height */
+    display: block;
     transform: rotate(90deg) scale(1.3) translate(203px, 0px);
     transform-origin: center center;
 }
@@ -395,18 +397,7 @@ body{
     color: rgb(255, 132, 0);
 }
 
-/* ========== AESTHETIC DIVIDER IMAGE ========== */
-#about-image{
-    border-top: 1px solid white;
-    text-align: center;
-    margin-top: 0px;
-}
-#about-image img{
-    background-size: cover;
-    max-width: 100%;
-    height: auto;
-    width: 1550px;
-}
+
 
 /* ========== FOOTER ========== */
 #footer {
