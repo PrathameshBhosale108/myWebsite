@@ -7,163 +7,183 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
 </head>
 <body>
+
+<!-- ========== NAVBAR ========== -->
 <nav class="taskbar">
-        <H1><a href="Index.html">Prathamesh Bhosale</a></H1>
-        <div>
-            <ul class="nav-links">
-                <li class="hideOnMobile"><a href="#home">Home</a></li>
-                <li class="hideOnMobile"><a href="#Blog">Blog</a></li>
-                <li class="hideOnMobile"><a href="#about-me">Portfolio</a></li>
-                <li class="hideOnMobile"><a href="#gallery">Gallery</a></li>
-                <li class="hideOnMobile"><a href="#footer">Contacts</a></li>
-                <li  class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-            </ul>
-            <ul class="sidebar">
-                <li onclick="hidesidebar()"><a href="#home">Home</a></li>
-                <li onclick="hidesidebar()"><a href="#Blog">Blog</a></li>
-                <li onclick="hidesidebar()"><a href="#about-me">Portfolio</a></li>
-                <li onclick="hidesidebar()"><a href="#gallery">Gallery</a></li>
-                <li onclick="hidesidebar()"><a href="#footer">Contacts</a></li>
-                <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            </ul>
-        </div>
+    <H1><a href="Index.html">Prathamesh Bhosale</a></H1>
+    <div>
+        <ul class="nav-links">
+            <li class="hideOnMobile"><a href="#home">Home</a></li>
+            <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+            <li class="hideOnMobile"><a href="#Blog">Blog</a></li>
+            <li class="hideOnMobile"><a href="#footer">Contacts</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick="hidesidebar()"><a href="#home">Home</a></li>
+            <li onclick="hidesidebar()"><a href="#projects">Projects</a></li>
+            <li onclick="hidesidebar()"><a href="#Blog">Blog</a></li>
+            <li onclick="hidesidebar()"><a href="#footer">Contacts</a></li>
+            <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        </ul>
+    </div>
 </nav>
+
+<!-- ========== HERO / CONTENT BLOCK ========== -->
 <div class="content-block" id="home">
-        <div class="text-content">
-            <h2>Discover  My  Work</h2>
-            <p>Welcome to my digital realm.<br><br><br>
-              As a student of engineering,<br> I am driven by an insatiable curiosity to explore the <br>infinite possibilities of technology and innovation.<br>
-              With every challenge,<br> I see an opportunity to learn, grow, and contribute to a future shaped by creativity and purpose.<br> 
-              Step into my world,<br> where ambition meets passion, and every endeavor is a <br>step towards a brighter horizon.<br></p>
-        </div>
-        <div class="image-content">
-            <img src="Images/James-Webb-Wallpapers-4K.webp" alt="James_Webb Telescope" class="image-adjust">
-        </div>
+    <div class="text-content">
+        <h2>Discover  My  Work</h2>
+        <p>Welcome to my digital realm.<br><br><br>
+          As a student of engineering,<br> I am driven by an insatiable curiosity to explore the <br>infinite possibilities of technology and innovation.<br>
+          With every challenge,<br> I see an opportunity to learn, grow, and contribute to a future shaped by creativity and purpose.<br>
+          Step into my world,<br> where ambition meets passion, and every endeavor is a <br>step towards a brighter horizon.<br></p>
+    </div>
+    <div class="image-content">
+        <img src="Images/James-Webb-Wallpapers-4K.webp" alt="James_Webb Telescope" class="image-adjust">
+    </div>
 </div>
+
+<!-- ========== PROJECTS SECTION ========== -->
+<section class="projects-section" id="projects">
+    <h2 class="projects-heading">PROJECTS</h2>
+    <div class="projects-container">
+
+        <!-- Project 1 — PLACEHOLDER -->
+        <div class="project-card">
+            <div class="project-card-img">
+                <div class="project-img-placeholder"></div>
+            </div>
+            <p class="project-tech">C++ &nbsp;·&nbsp; Arduino</p>
+            <h3 class="project-title">Project Title One</h3>
+            <p class="project-desc">A short description of what this project does, the problem it solves, and what you learned building it.</p>
+            <p class="project-date">Coming Soon</p>
+        </div>
+
+        <!-- Project 2 — PLACEHOLDER -->
+        <div class="project-card">
+            <div class="project-card-img">
+                <div class="project-img-placeholder"></div>
+            </div>
+            <p class="project-tech">Python &nbsp;·&nbsp; ML</p>
+            <h3 class="project-title">Project Title Two</h3>
+            <p class="project-desc">A short description of what this project does, the problem it solves, and what you learned building it.</p>
+            <p class="project-date">Coming Soon</p>
+        </div>
+
+        <!-- Project 3 — PLACEHOLDER -->
+        <div class="project-card">
+            <div class="project-card-img">
+                <div class="project-img-placeholder"></div>
+            </div>
+            <p class="project-tech">Android &nbsp;·&nbsp; Java</p>
+            <h3 class="project-title">Project Title Three</h3>
+            <p class="project-desc">A short description of what this project does, the problem it solves, and what you learned building it.</p>
+            <p class="project-date">Coming Soon</p>
+        </div>
+
+        <!-- Project 4 — PLACEHOLDER -->
+        <div class="project-card">
+            <div class="project-card-img">
+                <div class="project-img-placeholder"></div>
+            </div>
+            <p class="project-tech">Microcontroller &nbsp;·&nbsp; IoT</p>
+            <h3 class="project-title">Project Title Four</h3>
+            <p class="project-desc">A short description of what this project does, the problem it solves, and what you learned building it.</p>
+            <p class="project-date">Coming Soon</p>
+        </div>
+
+        <!-- Project 5 — PLACEHOLDER -->
+        <div class="project-card">
+            <div class="project-card-img">
+                <div class="project-img-placeholder"></div>
+            </div>
+            <p class="project-tech">Python &nbsp;·&nbsp; Aeronautics</p>
+            <h3 class="project-title">Project Title Five</h3>
+            <p class="project-desc">A short description of what this project does, the problem it solves, and what you learned building it.</p>
+            <p class="project-date">Coming Soon</p>
+        </div>
+
+        <!-- Project 6 — PLACEHOLDER -->
+        <div class="project-card">
+            <div class="project-card-img">
+                <div class="project-img-placeholder"></div>
+            </div>
+            <p class="project-tech">C++ &nbsp;·&nbsp; Embedded</p>
+            <h3 class="project-title">Project Title Six</h3>
+            <p class="project-desc">A short description of what this project does, the problem it solves, and what you learned building it.</p>
+            <p class="project-date">Coming Soon</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ========== BLOG SECTION ========== -->
 <section class="blog-section" id="Blog">
     <h2 class="blog-heading">BLOG</h2>
     <div class="blog-container">
-        <!-- Blog Post 1 -->
-           <div class="blog-post">
+
+        <div class="blog-post">
             <img src="Images/hero.jpg" alt="Blog Image">
             <p class="author-name">Prathamesh Bhosale</p>
-            <h3 class="blog-title"><a href="blog_1.html"><h3>The Quantum Leap: How Quantum Computers Are Changing Everything</h3></a>
+            <h3 class="blog-title"><a href="blog_1.html">The Quantum Leap: How Quantum Computers Are Changing Everything</a></h3>
             <p class="author-name">29 Sept 2024</p>
-            
-       </div>
-       <div class="blog-post">
-        <img src="Images/Gemini_Generated_Image_gpjb3ngpjb3ngpjb.jpeg" alt="Blog Image">
-        <p class="author-name">Prathamesh Bhosale</p>
-        <h3 class="blog-title"><a href="blog2.html"><h3>New Generation of Aerial Warfare</h3></a>
-        <p class="author-name">31 Dec 2024</p>
-        
-   </div>
-        <div class="blog-post">
-        <img src="Images/aesthetics.jpg" alt="Blog Image">
-        <p class="author-name">Prathamesh Bhosale</p>
-        <h3 class="blog-title">The Story of Nalanda</h3>
-        
         </div>
-     <!--   <div class="blog-post">
-      <img src="Images/aesthetics.jpg" alt="Blog Image">
-      <p class="author-name">Prathamesh Bhosale</p>
-      <h3 class="blog-title">The Story of Nalanda</h3>
-      
-      </div> -->
-     <!-- <div class="previous-blog">
-        <a href="previous-blog.html" class="previous-link">Previous Blogs</a>
-      </div> -->
-  </div>
+
+        <div class="blog-post">
+            <img src="Images/Gemini_Generated_Image_gpjb3ngpjb3ngpjb.jpeg" alt="Blog Image">
+            <p class="author-name">Prathamesh Bhosale</p>
+            <h3 class="blog-title"><a href="blog2.html">New Generation of Aerial Warfare</a></h3>
+            <p class="author-name">31 Dec 2024</p>
+        </div>
+
+        <div class="blog-post">
+            <img src="Images/aesthetics.jpg" alt="Blog Image">
+            <p class="author-name">Prathamesh Bhosale</p>
+            <h3 class="blog-title">The Story of Nalanda</h3>
+        </div>
+
+    </div>
 </section>
-<section id="about-me" class="about-me-section">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate engineering student and tech enthusiast with a keen interest in Quantum Computing, Aeronautics, and futuristic technologies.
-    </p>
-   <ul>
-      <li>Pursuing Bachelor of Engineering at Zeal College of Engineering and Research.</li>
-      <li>Skilled in C++, Python, and Aspiring Andriod Developer.</li>
-      <li>Experience with Arduino projects and microcontrollers.</li>
-      <li>Aviation enthusiast with knowledge in Aeronautics.</li>
-    </ul>
-    
-    <a href="#" class="about-button">Visit My Portfolio</a>
-  </section>
+
+<!-- ========== AESTHETIC DIVIDER IMAGE ========== -->
 <div id="about-image">
     <img src="Images/Aesthetic flow.png" alt="Aesthetic Flow">
 </div>
 
-<section class="gallery-section" id="gallery">
-  <h2 class="gallery-heading">Gallery</h2>
-  <hr class="gallery-line">
-  <div class="gallery-grid">
-    <img src="Photo Gallery Website/2024-BMW-M3-CS-006-2800p.jpg" alt="Photo 1">
-    <img src="Photo Gallery Website/20240211_183413.jpg" alt="Photo 2">
-    <img src="Photo Gallery Website/huge-engine-boeing-777300er-detailed-600nw-419350009.jpg" alt="Photo 3">
-    <img src="Photo Gallery Website/20231012_101456.jpg" alt="Photo 4">
-    <img src="Photo Gallery Website/20231022_180402.jpg" alt="Photo 5">
-    <img src="Photo Gallery Website/20240211_165636.jpg" alt="Photo 6">
-    <img src="Photo Gallery Website/20240324_193704.jpg" alt="Photo 7">
-    <img src="Photo Gallery Website/20240418_172025.jpg" alt="Photo 8">
-    <img src="Photo Gallery Website/20240504_090214.jpg" alt="Photo 9">
-    <img src="Photo Gallery Website/20240609_120329.jpg" alt="Photo 10">
-    <img src="Photo Gallery Website/20240609_173109.jpg" alt="Photo 11">
-    <img src="Photo Gallery Website/20240609_174013.jpg" alt="Photo 12">
-    <img src="Photo Gallery Website/20240712_104257.jpg" alt="Photo 13">
-    <img src="Photo Gallery Website/20240728_170626.jpg" alt="Photo 14">
-    <img src="Photo Gallery Website/20240804_173623.jpg" alt="Photo 15">
-    <img src="Photo Gallery Website/20240815_081946.jpg" alt="Photo 16">
-    <img src="Photo Gallery Website/20240917_210054.jpg" alt="Photo 17">
-    <img src="Photo Gallery Website/IMG-20221029-WA0008.jpg" alt="Photo 18">
-    <img src="Photo Gallery Website/Screenshot (94).png" alt="Photo 19">
-    <img src="Photo Gallery Website/Screenshot_20240831_193930_WhatsApp.png" alt="Photo 20">
-  </div>
-</section>
-
+<!-- ========== FOOTER ========== -->
 <footer id="footer">
-    <!-- Up Section -->
     <div class="footer-up">
-      <h3>Prathamesh Bhosale</h3>
+        <h3>Prathamesh Bhosale</h3>
     </div>
-  
-    <!-- Down Section -->
     <div class="footer-down">
-      <!-- Left Section: Email -->
-      <div class="footer-left">
-        <p>prathameshbhosale108@gmail.com</p>
-      </div>
-  
-      <!-- Middle Section: Home Address -->
-      <div class="footer-middle">
-        <p>House no 339<br> Narayani House<br> Pune 411046<br></p>
-      </div>
-  
-      <!-- Right Section: Social Media Icons -->
-      <div class="footer-right">
-        <a href="http://www.youtube.com/@prathameshbhosale9968" target="_blank" class="Red">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="https://x.com/RevealP30112" target="_blank" class="Black">
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/prathamesh-bhosale-03a942256?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BizIz%2FmjyRASxydIwuei1Mw%3D%3D" target="_blank" class="Dark-blue">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-          <a href="https://github.com/PrathameshBhosale108" target="_blank" class="Black">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        
-      </div>
+        <div class="footer-left">
+            <p>prathameshbhosale108@gmail.com</p>
+        </div>
+        <div class="footer-middle">
+            <p>House no 339<br> Narayani House<br> Pune 411046<br></p>
+        </div>
+        <div class="footer-right">
+            <a href="http://www.youtube.com/@prathameshbhosale9968" target="_blank" class="Red">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://x.com/RevealP30112" target="_blank" class="Black">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/prathamesh-bhosale-03a942256?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BizIz%2FmjyRASxydIwuei1Mw%3D%3D" target="_blank" class="Dark-blue">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/PrathameshBhosale108" target="_blank" class="Black">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
     </div>
     <div class="footer-bottom">
-      <p><i class="fa-regular fa-copyright"></i> 2026 Prathamesh Bhosale. All Rights Reserved.<br> Made with <i class="fa-solid fa-heart" id="Color"></i> in BHARAT</p>
+        <p><i class="fa-regular fa-copyright"></i> 2026 Prathamesh Bhosale. All Rights Reserved.<br> Made with <i class="fa-solid fa-heart" id="Color"></i> in BHARAT</p>
     </div>
-  </footer>
-  <script src="Koty.js"></script>
+</footer>
+
+<script src="Koty.js"></script>
 </body>
 </html>
-
