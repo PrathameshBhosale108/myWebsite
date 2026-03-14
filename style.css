@@ -191,6 +191,7 @@ body{
     width: 100%;
     background-color: #FBF6E7;
     padding: 0px 0px 20px 0px;
+    padding-left: 50px;
     border-top: 2px solid black;
     display: flex;
     align-items: flex-start;
