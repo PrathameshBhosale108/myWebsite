@@ -207,7 +207,7 @@ body{
 }
 
 .projects-container {
-    padding-left: 50px;
+    padding-left: 150px;
     padding-right: 30px;
     display: flex;
     flex-direction: row;
